@@ -15,51 +15,51 @@ h1 {
 }
 
 table {
-    text-align: left;
-	border-collapse: collapse;
-    --color: #d0d0f5;
-    caption-side: bottom;
+  text-align: left;
+  border-collapse: collapse;
+  --color: #d0d0f5;
+  caption-side: bottom;
 }
 
 th,
 td {
-	border: 1px solid lightgrey;
-	padding: 0.25rem 0.75rem;
+  border: 1px solid lightgrey;
+  padding: 0.25rem 0.75rem;
 }
 
 th,
 caption {
-	text-align: start;
+  text-align: start;
 }
 
 thead th:not(:first-child),
 td {
-	text-align: end;
+  text-align: end;
 }
 
 thead {
-	border-block-end: 2px solid;
-	background: whitesmoke;
+  border-block-end: 2px solid;
+  background: whitesmoke;
 }
 
 tfoot {
-	border-block: 2px solid;
-	background: whitesmoke;
+  border-block: 2px solid;
+  background: whitesmoke;
 }
 
 thead,
 tfoot {
-	background: var(--color);
+  background: var(--color);
 }
 
 tbody tr:nth-child(even) {
-	background: color-mix(in srgb, var(--color), transparent 60%);
+  background: color-mix(in srgb, var(--color), transparent 60%);
 }
 
-table th:last-child {
-    display: none;
-} 
+.match th:last-child {
+  display: none;
+}
 
-table td:last-child {
-    display: none;
-} 
+.match td:last-child {
+  display: none;
+}
