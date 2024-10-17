@@ -17,7 +17,7 @@ include_once "data.php";
 
 <h1>Historia de las finales de champions</h1>
 
-<table>
+<table class="match">
 <tr>
 
 <?php
@@ -37,6 +37,70 @@ foreach ($finales->rows as $final) {
 
     foreach ($final as $final_row) {
         echo "<td>" . $final_row . "</td>";
+    }
+
+    echo "</tr>";
+}
+
+?>
+
+</tr>
+
+
+</table>
+
+<table>
+<tr>
+
+<?php
+
+foreach ($ranking_clubes->headers as $header) {
+    echo "<th>" . $header . "</th>";
+}
+
+?>
+
+</tr>
+
+<?php
+
+foreach ($ranking_clubes->rows as $ranking_club) {
+    echo "<tr>";
+
+    foreach ($ranking_club as $ranking_row) {
+        echo "<td>" . $ranking_row . "</td>";
+    }
+
+    echo "</tr>";
+}
+
+?>
+
+</tr>
+
+
+</table>
+
+<table>
+<tr>
+
+<?php
+
+foreach ($ranking_paises->headers as $header) {
+    echo "<th>" . $header . "</th>";
+}
+
+?>
+
+</tr>
+
+<?php
+
+foreach ($ranking_paises->rows as $ranking_pais) {
+    echo "<tr>";
+
+    foreach ($ranking_pais as $ranking_row) {
+        echo "<td>" . $ranking_row . "</td>";
     }
 
     echo "</tr>";
