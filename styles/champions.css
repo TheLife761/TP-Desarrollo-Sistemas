@@ -1,36 +1,67 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
+
 body {
+  width: 100%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  max-width: 50rem;
 }
 
 body {
@@ -44,15 +75,16 @@ body {
 }
 
 h1 {
-  font-size: 3em; /* Tamaño de fuente grande */
-  text-transform: uppercase; /* Mayúsculas */
-  letter-spacing: 3px; /* Espaciado entre letras */
-  margin: 20px 0; /* Margen arriba y abajo */
-  background: linear-gradient(to right, #66b3ff       , #0072b8    ); /* Gradiente azul y dorado */
-  -webkit-background-clip: text; /* Clip de fondo para texto */
-  -webkit-text-fill-color: transparent; /* Color de texto transparente */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para darle profundidad */
-  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 0;
+  background: linear-gradient(to right, #66b3ff, #0072b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem 1rem 0 2.5rem;
 }
 
 table {
@@ -119,6 +151,5 @@ select option {
 }
 
 .table-container {
-  width: 100%;
-  max-width: 30em;
+  padding: 2.5em;
 }

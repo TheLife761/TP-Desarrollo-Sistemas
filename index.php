@@ -21,6 +21,8 @@ include_once "data.php";
 
 <h1>Historia de las finales de champions</h1>
 
+<main>
+
 <div class="table-container">
 <table class="match" id="finales">
 
@@ -140,6 +142,8 @@ foreach ($ranking_paises->rows as $ranking_pais) {
 
 </table>
 </div>
+
+</main>
     
 <script src="scripts/index.js"></script>
 </body>
