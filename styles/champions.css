@@ -11,13 +11,13 @@ body {
 h1 {
   text-align: center;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 table {
   text-align: left;
   border-collapse: collapse;
-  --color: #d0d0f5;
+  --color: #03037f;
   caption-side: bottom;
 }
 
@@ -56,10 +56,42 @@ tbody tr:nth-child(even) {
   background: color-mix(in srgb, var(--color), transparent 60%);
 }
 
+tbody tr:nth-child(odd) {
+  background: color-mix(in srgb, #8bb1ee, transparent 60%);
+}
+
+
 .match th:last-child {
   display: none;
 }
 
 .match td:last-child {
   display: none;
+}
+.container .buscador {
+  fill: #4285F4; /* Color del ícono */
+  width: 25px; /* Ancho del ícono */
+  height: 30px; /* Altura del ícono */
+}
+.container{
+  justify-content: center;
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  width: 400px; /* Ancho del contenedor */
+  margin: auto; /* Centra el contenedor en la página */
+  margin-bottom: 30px;
+}
+.container input[type="text"] {
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno al hacer clic */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  width: 100%; /* Ancho completo del contenedor */
+}
+.container button{
+  border-radius: 30px;
 }
