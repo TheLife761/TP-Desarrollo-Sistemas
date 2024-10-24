@@ -63,3 +63,7 @@ tbody tr:nth-child(even) {
 .match td:last-child {
   display: none;
 }
+
+select option {
+  background-color: gray;
+}

@@ -11,13 +11,17 @@ include_once "data.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/champions.css">
+    <script src="./frameworks/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <title>Champions</title>
 </head>
 <body>
 
 <h1>Historia de las finales de champions</h1>
 
-<table class="match">
+<table class="match" id="finales">
+<thead>
 <tr>
 
 <?php
@@ -29,6 +33,9 @@ foreach ($finales->headers as $header) {
 ?>
 
 </tr>
+</thead>
+
+<tbody>
 
 <?php
 
@@ -45,6 +52,7 @@ foreach ($finales->rows as $final) {
 ?>
 
 </tr>
+</tbody>
 
 
 </table>
@@ -113,5 +121,6 @@ foreach ($ranking_paises->rows as $ranking_pais) {
 
 </table>
     
+<script src="scripts/index.js"></script>
 </body>
 </html>
