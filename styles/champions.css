@@ -1,3 +1,38 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
 body {
   background-image: url("../images/fondo\ champions-2.jpg");
   color: white;
@@ -53,13 +88,17 @@ tfoot {
 }
 
 tbody tr:nth-child(even) {
-  background: color-mix(in srgb, var(--color), transparent 60%);
+  background: color-mix(in srgb, var(--color), transparent 60%) !important;
 }
 
 tbody tr:nth-child(odd) {
-  background: color-mix(in srgb, #8bb1ee, transparent 60%);
+  background: color-mix(in srgb, #8bb1ee, transparent 60%) !important;
 }
 
+input[type="search"] {
+  background-color: white !important;
+  color: black !important;
+}
 
 .match th:last-child {
   display: none;
@@ -73,30 +112,7 @@ select option {
   background-color: gray;
 }
 
-.container .buscador {
-  fill: #4285F4; /* Color del ícono */
-  width: 25px; /* Ancho del ícono */
-  height: 30px; /* Altura del ícono */
-}
-.container{
-  justify-content: center;
-  display: flex; /* Utiliza flexbox para alinear elementos */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-  border-radius: 30px; /* Bordes redondeados */
-  padding: 10px; /* Espaciado interno */
-  width: 400px; /* Ancho del contenedor */
-  margin: auto; /* Centra el contenedor en la página */
-  margin-bottom: 30px;
-}
-.container input[type="text"] {
-  border: none; /* Sin borde */
-  outline: none; /* Sin contorno al hacer clic */
-  padding: 10px; /* Espaciado interno */
-  border-radius: 15px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de fuente */
-  width: 100%; /* Ancho completo del contenedor */
-}
-.container button{
-  border-radius: 30px;
+.table-container {
+  width: 100%;
+  max-width: 30em;
 }
